@@ -1,0 +1,8 @@
+ @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&family=Roboto&display=swap');
+
+body {
+    font-family: 'Poppins';
+    background: #1c1c1c;    
+    color: white;
+}
+
