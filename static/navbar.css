@@ -1,16 +1,15 @@
 #navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* background: blue; */
-    width: 100%;
+    
+    
+    background: blue;
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #fffcfc4f;
     padding-left: 30px;
     padding-right: 30px;
-
+    border-radius: 10px;
 }
 
 
@@ -34,23 +33,6 @@
     
 }
 
-#navbar::after {
-    content: ' ';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 4px;
-    bottom: 0;
-    left: 0;
-    background-color: #A54AFF;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-#navbar:hover::after {
-    transform: scaleX(1);
-  transform-origin: bottom left;
-}
 
 .login, .register {
     color: white;
@@ -85,6 +67,7 @@
     padding: 10px 20px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
+    margin-right: 0;
     transition: .2s;
     &:hover {
         background: #A54AFF;
@@ -100,5 +83,9 @@
     text-decoration: none;
 }
 
-
+.caja {
+    width: 500px;
+    height: 500px;
+    background:white;
+}
 

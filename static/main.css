@@ -6,3 +6,63 @@ body {
     color: white;
 }
 
+.form-register {
+   background: rgb(255, 255, 255);
+   border-radius: 10px;
+   color: #999;
+   font-size: 0.9em;
+    padding: 60px 100px;
+    margin: 0 auto;
+    
+    
+}
+
+.form-register, .field {
+    border: 0;
+    
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.field {
+    height: 30px;
+    border-bottom: 1px solid black;
+    border-radius: 2px;
+    transition: .2s;
+    
+}
+
+.field:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(52, 52, 245);
+    border-radius: 2px;
+}
+
+.register-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.submit {
+    border: 2px solid rgb(65, 65, 248);
+    color: rgb(65, 65, 248);
+    font-weight: bold;
+    background: none;
+    padding: 16px;
+    border-radius: 15px;
+    width: 100%;
+    transition: .2s;
+    &:hover {
+        cursor: pointer;
+        background: rgb(65, 65, 248);
+        color: white;
+        
+    }
+
+}
+
+
+
