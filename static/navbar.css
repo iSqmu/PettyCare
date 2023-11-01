@@ -1,15 +1,22 @@
+
+
 #navbar {
     
     
     background: blue;
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #fffcfc4f;
+    background: #202020fa;
     padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 10px;
+    padding-right: 30px ;
+    padding: 20px 10px;
+    position: sticky;
+    top: 0;
+    
+    
+    
+    
 }
 
 
@@ -27,7 +34,8 @@
 }
 
 .navlink:hover {
-    background: #A54AFF;
+    background: #4a74ff;
+    height: 100%;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     
@@ -38,6 +46,7 @@
     color: white;
     margin-left: 50px;
     margin-right: 70px;
+    
 }
 
 .login {
@@ -50,8 +59,11 @@
     font-weight: bold;
     text-decoration: none;
     transition: .2s;
+    position: relative;
+    left: 6px;
     &:hover {
-    background: #A54AFF;
+        background: #4a74ff;
+
     
     }
 }
@@ -70,7 +82,8 @@
     margin-right: 0;
     transition: .2s;
     &:hover {
-        background: #A54AFF;
+        background: #4a74ff;
+
 
         color: white;
         

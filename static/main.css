@@ -1,68 +1,86 @@
- @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    font-family: 'Poppins';
-    background: #1c1c1c;    
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #0048a7, #205caa, #2a548b);
+    height: 100vh;
+}
+
+.container {
     color: white;
+    padding: 20px 20px;
 }
 
-.form-register {
-   background: rgb(255, 255, 255);
-   border-radius: 10px;
-   color: #999;
-   font-size: 0.9em;
-    padding: 60px 100px;
-    margin: 0 auto;
-    
-    
-}
+#btnmsg {
+    background: rgba(36, 36, 36, 0.603);
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
 
-.form-register, .field {
-    border: 0;
-    
-    width: 200px;
-    margin-bottom: 30px;
-}
-
-.field {
-    height: 30px;
-    border-bottom: 1px solid black;
-    border-radius: 2px;
-    transition: .2s;
-    
-}
-
-.field:focus {
-    outline: none;
-    border-bottom: 2px solid rgb(52, 52, 245);
-    border-radius: 2px;
-}
-
-.register-container {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-
-    transform: translate(-50%, -50%);
-}
-
-.submit {
-    border: 2px solid rgb(65, 65, 248);
-    color: rgb(65, 65, 248);
-    font-weight: bold;
-    background: none;
-    padding: 16px;
-    border-radius: 15px;
-    width: 100%;
-    transition: .2s;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    transition: .3s;
     &:hover {
-        cursor: pointer;
-        background: rgb(65, 65, 248);
-        color: white;
-        
+        background: #3d669c6b;
+        transform: scale(1.2);
     }
+}
 
+/*! MARKERS !*/
+
+.oculto {
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.active {
+    visibility: visible;
+    transition: all .5s;
 }
 
 
+/** ERROR **/
 
+.error {
+    background: rgb(255, 80, 80);
+    
+    height: 5%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-size: 26px;
+    position: absolute;
+    top: 10px;
+    left: 10px; 
+}
+
+/** CORRECT **/
+
+.success {
+    background: green;
+    height: 5%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-size: 26px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
