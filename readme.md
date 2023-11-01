@@ -1,6 +1,8 @@
-# DESC: Petty care, una aplicacion desarrollada por un grupo de estudiantes del colegio Jose Ortega, parte de un proyecto de la materia de informatica
+# DESC
 
-# IMPORTANTE:
+Petty care, una aplicacion desarrollada por un grupo de estudiantes del colegio Jose Ortega, parte de un proyecto de la materia de informatica
+
+# IMPORTANTE
 
 La aplicacion usa base de datos mysql junto a un sistema php, para la creacion de las tablas mysql se hará de la siguiente manera:
 
