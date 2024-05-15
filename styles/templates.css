@@ -1,0 +1,159 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.555) 30%, #33333300 100%);
+    color: #333;
+    padding: 1rem   ;
+    margin: 0;
+    position: sticky;
+    z-index: 30;
+    top: 0;
+    h1 {
+        margin-left: 1rem;
+        margin-top: 0 ;
+        transition: all .2s ease-in-out;
+    }
+    a {
+        position: relative;
+        top: 15%;
+        color: #000;
+        text-decoration: none;
+        margin-right: 5rem;
+        padding: 0.5rem;
+        transition: all .3s ease-in-out;
+        &:hover {
+            color: #eee;
+            background-color: #333;
+            border-radius: 10px;
+        }
+    }
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 15%;
+    width: 0;
+    height: 2px;
+    background-color: #333;
+    transition: all .3s ease-in-out;
+}
+
+.navbar a:hover::after {
+    width: 70%;
+    background-color: #eee;
+    transition: width 0.3s ease-out;
+}
+
+@keyframes navLinkFade {
+    0% {
+        opacity: .5;
+        text-shadow: 0 0 2px #333;
+    }
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 10px #333;
+    }
+
+    100% {
+        opacity: .5;
+        text-shadow: 0 0 2px #333;
+    }
+}
+
+.navbar h1:hover {
+    color: transparent;
+    -webkit-text-stroke: 0.5px #333;
+    transition: all 1s ease-in-out;
+    animation: navLinkFade infinite ease-in-out 2s;
+}
+
+#footer {
+    position: static;
+    bottom: 0;
+    width: 95vw;
+    p {
+        text-align: center;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    a{
+        text-decoration: none;
+        color: #eee ;
+        transition: all .3s ease-in-out;
+        z-index: 1;
+    }
+}
+
+#footer .links {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    padding: 10px;
+}
+
+#footer .links a:hover {
+    transform: scale(1.2);
+    color: #333;
+}
+
+#footer .links a:hover::after {
+    animation: linkanim .5s ease-in-out forwards ;
+}
+
+#footer .links a::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: -8px;
+    width: 0px;
+    height: 2px;
+    background-color: #eee;
+    transition: all .3s ease-in-out ;
+    border-radius: 0px;
+}
+
+@keyframes linkanim {
+    0% {
+        width: 0;
+        height: 2px;
+    }
+    50% {
+        width: 120%;
+        height: 2px;
+    }
+    100% {
+        width: 120%;
+        height: 20px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    #footer {
+        position: static;
+    }
+    
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .links {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+        }
+        a{
+            margin: 5px;
+        }
+
+        
+    }
+}
